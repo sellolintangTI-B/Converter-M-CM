@@ -7,8 +7,56 @@
   <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
-  <header>
-    <h1>M-CM CONVERTER</h1>
-  </header>
+  <div class="container">
+    <header>
+      <h1>M-CM CONVERTER</h1>
+    </header>
+
+    <div class="Converter">
+      <div class="UserInput">
+        <div class="line">
+          <input type="button" name="btn7" value="7" onClick="valuecal(7)"/>
+          <input type="button" name="btn8" value="8" onClick="valuecal(8)"/>
+          <input type="button" name="btn9" value="9" onClick="valuecal(9)"/>
+        </div>
+
+        <div class="line">
+          <input type="button" name="btn4" value="4" onClick="valuecal(4)"/>
+          <input type="button" name="btn5" value="5" onClick="valuecal(5)"/>
+          <input type="button" name="btn6" value="6" onClick="valuecal(6)"/>
+        </div>
+
+        <div class="line">
+          <input type="button" name="btn1" value="1" onClick="valuecal(1)"/>
+          <input type="button" name="btn2" value="2" onClick="valuecal(2)"/>
+          <input type="button" name="btn3" value="3" onClick="valuecal(3)"/>
+        </div>
+
+        <div class="line">
+          <input type="button" name="btndot" value="." onClick="valuecal('.')"/>
+          <input type="button" name="btn0" value="0" onClick="valuecal(0)"/>
+          <input type="button" name="btnclear" value="C" onClick="clearall()"/>
+        </div>
+      </div>
+
+      <div class="Result">
+        <div class="resultscreen">
+          <input type="text" id="inputMeter" placeholder="Masukkan Meter">
+          <span class="unit">M</span>
+        </div>
+
+        <div class="result-box">
+          <input type="text" id="resultCm" placeholder="Hasil (Cm)" readonly>
+          <span class="unit">CM</span>
+        </div>
+
+        <button class="submit-btn" onclick="convertToCm()">Convert</button>
+        
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
