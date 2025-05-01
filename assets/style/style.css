@@ -90,6 +90,37 @@ input[type="button"]:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 2px solid #222831;
     margin-left: 40px;
+    position: relative;
+}
+
+.intro {
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+.button-flip {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 80px;
+    height: 50px;
+    background-color: #393E46;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-flip:hover {
+    background-color: #DFD0B8;
+    color: #222831;
+}
+
+.intro h2, .intro p {
+    margin: 0;
+    color: #222831;
 }
 
 input[type="text"] {
@@ -121,8 +152,8 @@ input[type="text"]:disabled {
     width: 100%;
     padding: 15px;
     font-size: 18px;
-    background-color: #DFD0B8;
-    color: #222831;
+    background-color: #222831;
+    color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -130,8 +161,8 @@ input[type="text"]:disabled {
 }
 
 .submit-btn:hover {
-    background-color: #222831;
-    color: #DFD0B8;
+    background-color: #DFD0B8;
+    color: #222831;
 }
 
 button:focus, input:focus {

@@ -33,21 +33,25 @@
         </div>
 
         <div class="line">
-          <input type="button" name="btndot" value="." onClick="valuecal('.')"/>
+          <input type="button" name="btndot" value="." onClick="valuecal()"/>
           <input type="button" name="btn0" value="0" onClick="valuecal(0)"/>
           <input type="button" name="btnclear" value="C" onClick="clearall()"/>
         </div>
       </div>
 
       <div class="Result">
+        <div class="intro">
+          <h2>1 Meter =</h2>
+          <p>100 centimeter</p>
+          <button class="button-flip">M=>CM</button>
+        </div>
+
         <div class="resultscreen">
           <input type="text" id="inputMeter" placeholder="Masukkan Meter">
-          <span class="unit">M</span>
         </div>
 
         <div class="result-box">
           <input type="text" id="resultCm" placeholder="Hasil (Cm)" readonly>
-          <span class="unit">CM</span>
         </div>
 
         <button class="submit-btn" onclick="convertToCm()">Convert</button>
