@@ -29,6 +29,7 @@ function convertToCm() {
   if (isMeterToCm) {
     result = input * 100;
     document.getElementById('resultCm').value = result + ' CM';
+    document.getElementById('resultCm').value = result + ' CM';
   } else {
       result = input / 100;
       document.getElementById('resultCm').value = result + ' M';
