@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
             flipButton.textContent = 'CM => M';
             introTitle.textContent = 'M => CM';
             inputField.placeholder = 'Masukkan Angka M';
-            resultField.placeholder = 'Hasil (Cm)';
+            resultField.placeholder = 'Hasil (CM)';
         } else {
           document.title = 'CM => M CONVERTER';
             mainTitle.textContent = 'Sentimeter(CM) => Meter(M) CONVERTER';
