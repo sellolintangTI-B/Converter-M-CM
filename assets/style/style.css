@@ -30,8 +30,7 @@ header {
   padding: 10px 20px;
   border-radius: 10px;
   border: 2px solid #222831;
-  margin-bottom: 30px;
-  margin-top: 20px;
+  margin-bottom: 60px;
   display: inline-block;
 }
 
@@ -93,7 +92,6 @@ input[type="button"]:hover {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 2px solid #222831;
-  margin-left: 40px;
   position: relative;
 }
 
@@ -183,4 +181,74 @@ button:focus, input:focus {
   margin-top: 20px;
   margin-bottom : 20px;
   display: inline-block;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: fixed;
+    top: 0;
+    margin: center;
+    margin-top: 20px;
+    width: 98%;
+    z-index: 90;
+    padding: 7px;
+    border-radius: 10;
+    box-sizing: border-box;
+  }
+
+  .container {
+    padding-top: 80px;
+  }
+
+  .Converter {
+    flex-direction: column;
+    padding: 40px;
+    margin: 0;
+  }
+
+  .UserInput {
+    display: none;
+  }
+
+  .Result {
+    margin: 0;
+    padding: 30px 20px;
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  input[type="button"] {
+    width: 25%;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .button-flip {
+    width: 70px;
+    height: 40px;
+    font-size: 11px;
+    top: 5px;
+    right: 5px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .intro h2 {
+    font-size: 1.2em;
+  }
+
+  .site-footer {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
 }
