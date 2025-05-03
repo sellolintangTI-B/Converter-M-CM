@@ -22,10 +22,10 @@ function convertToCm() {
   let result;
   if (isMeterToCm) {
     result = input * 100;
-    document.getElementById('resultCm').value = result + ' cm';
+    document.getElementById('resultCm').value = result + ' CM';
   } else {
     result = input / 100;
-    document.getElementById('resultCm').value = result + ' m';
+    document.getElementById('resultCm').value = result + ' M';
   }
 }
 
