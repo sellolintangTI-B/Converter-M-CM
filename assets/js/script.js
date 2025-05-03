@@ -61,16 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
         inputField.placeholder = 'Masukkan Angka CM';
         resultField.placeholder = 'Hasil (M)';
       }
-      clearall();
-    });
+    clearall();
+  });
 
-    inputField.addEventListener('input', (e) => {
-      currentValue = e.target.value;
-    });
+  inputField.addEventListener('input', (e) => {
+    currentValue = e.target.value;
+  });
 
-    inputField.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        convertToCm();
-      }
-    });
+  inputField.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') {
+      convertToCm();
+    }
+  });
 });
