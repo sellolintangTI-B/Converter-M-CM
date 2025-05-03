@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M-CM Converter</title>
+  <title>M => CM Converter</title>
   <link rel="stylesheet" href="./assets/style/style.css">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>M-CM CONVERTER</h1>
+      <h1 id="main-title">Meter(M) => Sentimeter(CM) CONVERTER</h1>
     </header>
 
     <div class="Converter">
@@ -33,7 +33,7 @@
         </div>
 
         <div class="line">
-          <input type="button" name="btndot" value="." onClick="valuecal()"/>
+          <input type="button" name="btndot" value="." onClick="valuecal('.')"/>
           <input type="button" name="btn0" value="0" onClick="valuecal(0)"/>
           <input type="button" name="btnclear" value="C" onClick="clearall()"/>
         </div>
@@ -41,13 +41,12 @@
 
       <div class="Result">
         <div class="intro">
-          <h2>1 Meter =</h2>
-          <p>100 centimeter</p>
-          <button class="button-flip">M=>CM</button>
+          <h2>M => CM</h2>
+          <button class="button-flip">CM => M</button>
         </div>
 
         <div class="resultscreen">
-          <input type="text" id="inputMeter" placeholder="Masukkan Meter">
+          <input type="text" id="inputMeter" placeholder="Masukkan Angka M">
         </div>
 
         <div class="result-box">
@@ -60,7 +59,12 @@
     </div>
   </div>
 
-  <script src="./assets/js/script.js"></script>
+  <div style="display: flex; justify-content: center;">
+    <footer class="site-footer">
+      <p>© 2025 | Naqib dan Sello</p>
+    </footer>
+  </div>
 
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>
