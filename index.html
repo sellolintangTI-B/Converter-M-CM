@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M => CM CONVERTER</title>
-  <link rel="stylesheet" href="./assets/style/style.css">
-</head>
-<body>
-  <div class="container">
-    <header>
-      <h1 id="main-title">Meter(M) => Sentimeter(CM) CONVERTER</h1>
-    </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M => CM CONVERTER</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 id="main-title">Meter(M) => Sentimeter(CM) CONVERTER</h1>
+      </header>
 
-    <div class="Converter">
-      <div class="UserInput">
-        <div class="line">
-          <input type="button" name="btn7" value="7" onClick="valuecal(7)"/>
-          <input type="button" name="btn8" value="8" onClick="valuecal(8)"/>
-          <input type="button" name="btn9" value="9" onClick="valuecal(9)"/>
+      <div class="Converter">
+        <div class="UserInput">
+          <div class="line">
+            <input type="button" name="btn7" value="7" onClick="valuecal(7)"/>
+            <input type="button" name="btn8" value="8" onClick="valuecal(8)"/>
+            <input type="button" name="btn9" value="9" onClick="valuecal(9)"/>
+          </div>
+
+          <div class="line">
+            <input type="button" name="btn4" value="4" onClick="valuecal(4)"/>
+            <input type="button" name="btn5" value="5" onClick="valuecal(5)"/>
+            <input type="button" name="btn6" value="6" onClick="valuecal(6)"/>
+          </div>
+
+          <div class="line">
+            <input type="button" name="btn1" value="1" onClick="valuecal(1)"/>
+            <input type="button" name="btn2" value="2" onClick="valuecal(2)"/>
+            <input type="button" name="btn3" value="3" onClick="valuecal(3)"/>
+          </div>
+
+          <div class="line">
+            <input type="button" name="btndot" value="." onClick="valuecal('.')"/>
+            <input type="button" name="btn0" value="0" onClick="valuecal(0)"/>
+            <input type="button" name="btnclear" value="C" onClick="clearall()"/>
+          </div>
         </div>
 
-        <div class="line">
-          <input type="button" name="btn4" value="4" onClick="valuecal(4)"/>
-          <input type="button" name="btn5" value="5" onClick="valuecal(5)"/>
-          <input type="button" name="btn6" value="6" onClick="valuecal(6)"/>
-        </div>
+        <div class="Result">
+          <div class="intro">
+            <h2>M => CM</h2>
+            <button class="button-flip">CM => M</button>
+          </div>
 
-        <div class="line">
-          <input type="button" name="btn1" value="1" onClick="valuecal(1)"/>
-          <input type="button" name="btn2" value="2" onClick="valuecal(2)"/>
-          <input type="button" name="btn3" value="3" onClick="valuecal(3)"/>
-        </div>
+          <div class="resultscreen">
+            <input type="text" id="inputMeter" placeholder="Masukkan Angka M">
+          </div>
 
-        <div class="line">
-          <input type="button" name="btndot" value="." onClick="valuecal('.')"/>
-          <input type="button" name="btn0" value="0" onClick="valuecal(0)"/>
-          <input type="button" name="btnclear" value="C" onClick="clearall()"/>
-        </div>
-      </div>
+          <div class="result-box">
+            <input type="text" id="resultCm" placeholder="Hasil (CM)" readonly>
+          </div>
 
-      <div class="Result">
-        <div class="intro">
-          <h2>M => CM</h2>
-          <button class="button-flip">CM => M</button>
+          <button class="submit-btn" onclick="convertToCm()">Convert</button>
+          
         </div>
-
-        <div class="resultscreen">
-          <input type="text" id="inputMeter" placeholder="Masukkan Angka M">
-        </div>
-
-        <div class="result-box">
-          <input type="text" id="resultCm" placeholder="Hasil (CM)" readonly>
-        </div>
-
-        <button class="submit-btn" onclick="convertToCm()">Convert</button>
-        
       </div>
     </div>
-  </div>
 
-  <div style="display: flex; justify-content: center;">
-    <footer class="site-footer">
-      <p>© 2025 | Naqib dan Sello</p>
-    </footer>
-  </div>
+    <div style="display: flex; justify-content: center;">
+      <footer class="site-footer">
+        <p>© 2025 | Naqib dan Sello</p>
+      </footer>
+    </div>
 
-  <script src="./assets/js/script.js"></script>
-</body>
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
